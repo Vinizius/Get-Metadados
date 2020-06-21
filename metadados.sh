@@ -6,8 +6,6 @@ BLUE='\033[34;1m'
 YELLOW='\033[33;1m'
 END='\033[m'
 
-VERSION='1.0'
-
 ARG1=$1
 ARG2=$2
 
@@ -25,13 +23,12 @@ __Banner__() {
     echo -e "${YELLOW}#                                                                               #${END}"
     echo -e "${YELLOW}#                             METADADOS                                         #${END}"
     echo -e "${YELLOW}#                             By: Vszn                                          #${END}"
-    echo -e "${YELLOW}#                             Version: $VERSION                                      #${END}"
     echo -e "${YELLOW}#                                                                               #${END}"
     echo -e "${YELLOW}#################################################################################${END}"
     echo
-    echo -e "Usage   : ${GREEN}$0${END} [URL] [Extension]"
-    echo -e "Example : ${GREEN}$0${END} www.site.com pdf"
-    echo -e "Extensions : ${BLUE}pdf,doc,docx,xls,xlsx,ppt,pttx${END}"
+    echo -e "Usar   : ${GREEN}$0${END} [URL] [Extension]"
+    echo -e "Exemplo : ${GREEN}$0${END} www.site.com pdf"
+    echo -e "Extensões : ${BLUE}pdf,doc,docx,xls,xlsx,ppt,pttx${END}"
     echo
 }
 
