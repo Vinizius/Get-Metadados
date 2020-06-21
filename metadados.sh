@@ -56,7 +56,7 @@ __FindFiles__(){
     __ClearFolder__
     mkdir /tmp/metadados && cd /tmp/metadados
 
-    lynx --dump "https://google.com/search?&q=site:$ARG1+ext:pdf" | grep ".$ARG2" | cut -d "=" -f2 | egrep -v "site|google" | sed 's/...$//' > Files
+    lynx --dump "https://google.com/search?&q=site:$ARG1+ext:$ARG2" | grep ".$ARG2" | cut -d "=" -f2 | egrep -v "site|google" | sed 's/...$//' > Files
 }
 
 __DownloadFiles__() {
